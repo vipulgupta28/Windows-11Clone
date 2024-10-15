@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+
+    <div class="add-event" id="add-event">
+        <div class="todo-container">
+           <button id="cross">x</button>
+            <input type="text" id="todo-input" placeholder="Add Event...">
+            <button id="add-btn">Add</button>
+            <ul id="todo-list"></ul>
+        </div> 
+    </div>
+
+    <div class="calendar" id="calender">
+        <div class="month January"> 
+            <h3>January 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p id="date">31</p><p id="date">1</p><p id="date">2</p><p id="date">3</p><p id="date">4</p><p id="date">5</p><p id="date">6</p><p id="date">7</p><p id="date">8</p><p id="date">9</p><p id="date">10</p>
+        <p id="date">11</p><p id="date">12</p><p id="date">13</p><p id="date">14</p><p id="date">15</p><p id="date">16</p><p id="date">17</p><p id="date">18</p><p id="date">19</p><p id="date">20</p>
+        <p id="date">21</p><p id="date">22</p><p id="date">23</p><p id="date">24</p><p id="date">25</p> <p id="date">26</p> <p id="date">27</p> <p id="date">28</p> <p id="date">29</p> 
+        <p id="date">30</p> <p id="date">31</p>
+            </div>
+        </div>
+
+        <div class="month February">
+            <h3>February 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p>
+        <p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p>
+        <p>18</p><p>19</p><p>20</p><p>21</p><p>22</p> <p>23</p> <p>24</p> <p>25</p> <p>26</p> 
+        <p>27</p> <p>28</p><p>29</p>
+            </div>
+        </div>
+
+        <div class="month March">
+            <h3>March 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p>
+        <p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p>
+        <p>18</p><p>19</p><p>20</p><p>21</p><p>22</p> <p>23</p> <p>24</p> <p>25</p> <p>26</p> 
+        <p>27</p> <p>28</p><p>29</p><p>30</p> 
+            </div>
+        </div>
+
+        <div class="month April">
+            <h3>April 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p>31</p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> 
+            </div>
+        </div>
+
+        <div class="month May">
+            <h3>May 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> <p>31</p>
+            </div>
+        </div>
+
+        <div class="month June">
+            <h3>June 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+      
+            </div>
+        </div>
+
+        <div class="month July">
+            <h3>July 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p>30</p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> <p>31</p>
+            </div>
+        </div>
+
+        <div class="month August">
+            <h3>August 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> <p>31</p>
+            </div>
+        </div>
+
+        <div class="month September">
+            <h3>September 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> 
+            </div>
+        </div>
+
+        <div class="month October">
+            <h3>October 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p><p>31</p>
+            </div>
+        </div>
+
+        <div class="month November">
+            <h3>November 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p></p><p></p><p></p><p></p><p></p><p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p>
+            </div>
+        </div>
+
+        <div class="month December">
+            <h3>December 2024</h3>
+            <div class="days">
+                <p class="no"><b>S</b></p><p class="no"><b>M</b></p><p class="no"><b>T</b></p><p class="no"><b>W</b></p><p class="no"><b>T</b></p><p class="no"><b>F</b></p> <p class="no"><b>S</b></p>
+        <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p>
+        <p>11</p><p>12</p><p>13</p><p>14</p><p>15</p><p>16</p><p>17</p><p>18</p><p>19</p><p>20</p>
+        <p>21</p><p>22</p><p>23</p><p>24</p><p>25</p> <p>26</p> <p>27</p> <p>28</p> <p>29</p> 
+        <p>30</p> <p>31</p>
+            </div>
+        </div>
+  
+    </div>
+
+</body>
+<script src="caldender.js"></script>
+</html>

@@ -1,0 +1,490 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+.upperBar{
+    background-color: black;
+    height: 40px;
+    width: auto;
+    top: 0;
+    right: 0;
+}
+
+#FirstBar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30px;
+    border-radius: 4px;
+    width: 870px;
+    right: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: #323131;
+    border: none;
+
+}
+
+.box{
+    background-color: #1e1e1e;
+    height: 40px;
+    width: 250px;
+}
+
+
+hr{
+    height: 0;
+    size: 10px;
+}
+
+button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+#cross, #square, #minus {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    padding: 10px;
+}
+#cross:hover, #square:hover, #minus:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#square{
+    height: 17px;
+    width: 17px;
+
+}
+
+#SearchBar{
+    position: absolute;
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30px;
+    border-radius: 4px;
+    width: 380px;
+    right: 10px;
+    top: 50px;
+    align-items: center;
+    background-color: #323131;
+    border: none;
+}
+
+#cross {
+    right: 0;
+}
+
+#square {
+    right: 50px; 
+}
+
+#minus {
+    right: 100px; 
+}
+
+#cross:hover{
+    background-color: red;
+}
+
+#left-arrow, #right-arrow, #up-arrow, #refresh{
+    background-color:#1e1e1e;
+    padding: 10px;
+    height: 18px;
+    width: 18px;
+    
+
+}
+
+#left-arrow:hover, #right-arrow:hover, #up-arrow:hover, #refresh:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+#left-arrow{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#right-arrow{
+    margin-left: 20px;
+}
+
+#up-arrow{
+    margin-left: 20px;
+}
+
+#refresh{
+    margin-left: 20px
+}
+
+#dropdown{
+    border: none;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lowermid{
+    background-color:#1e1e1e;
+    
+}
+
+
+#new{
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    margin-left: 5%;
+}
+.vertical{
+    width: 10px;
+    height: 20px;
+    background-color: white;
+}
+
+#Sort{
+    margin-left: 3%;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#View{
+    margin-left: 2%;
+    border: none;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#Sort:hover, #View:hover, #new:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+#scissor, #copy, #paste, #rename, #share, #bin{
+    height: 20px;
+    width: 20px;
+    border: none;
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-top: 30px;
+    
+
+}
+
+#scissor:hover, #copy:hover, #paste:hover, #rename:hover, #share:hover, #bin:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+#horizontal{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.315);
+    display: block;   
+
+    
+
+}
+
+.three-dots{
+    background-color: #1e1e1e;
+    border: none;
+    height: 20px;
+    width: 20px;
+    margin-left: 3%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4vh;
+    padding-left: 240px;
+}
+
+.storage-unit {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+   
+}
+
+.windows-c, .windows-d {
+    height: 60px;
+    width: 70px;
+    margin-right: 10px; 
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.storage-container {
+    width: 150%; /* Adjust as needed */
+    height: 18px;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+
+.storage-barC, .storage-barD {
+    height: 100%;
+    width: 150px;
+    background-color: rgb(59, 124, 199);
+}
+
+.file-explorer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: calc(100px + 102px); 
+    left: 0;
+    width: 200px;
+    height: calc(100% - 100px - 20px); 
+    background-color:#1e1e1e;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    color: white;
+    
+   
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+ 
+    
+}
+
+.nav-list li {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    list-style: none;
+    border: none;
+    padding: 7px;
+    text-align: left;
+    font-size: 80%;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    
+}
+
+/* General styles for the dropdowns */
+select {
+    content: '▼';
+    width: 100px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f1f1f1; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows 11 font */
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none; /* Removes default arrow for better custom styling */
+    outline: none; /* Removes outline on focus */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+select:hover {
+    background-color: #e1e1e1; /* Slightly darker gray */
+}
+
+/* Focus effect */
+select:focus {
+    background-color: #e1e1e1;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* Blue outline glow similar to Windows 11 */
+}
+
+/* Custom arrow for the select dropdown */
+select::after {
+    content: '▼'; /* Custom arrow symbol */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents arrow from blocking the click */
+    font-size: 12px;
+    color: #333;
+}
+
+/* Style the options */
+option {
+    background-color: #fff; /* White background */
+    color: #333;
+    padding: 8px;
+}
+
+/* Option hover effect */
+option:hover {
+    background-color: #e1e1e1; /* Slight hover effect on options */
+}
+
+
+.nav-list li.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Your active background color */
+}
+
+.sideBar-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px;
+}
+
+.nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#sideBar{
+   
+    height: 24px;
+    width: 24px;
+    padding-right: 10px;
+    justify-content: center;
+    position: absolute;
+}
+
+.message{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    margin-left: 50%;
+}
+
+.game-unit {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the items */
+    margin-right: 32px;
+    padding: 10px; /* Adjust padding as needed */
+    padding-left: 14px;
+    padding-right: 14px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.game-unit:hover {
+   
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* .game-unit:hover .mines,
+.game-unit:hover .game-name {
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.mines {
+    transition: background-color 0.3s; /* Smooth transition */
+    background-color: rgb(241, 241, 24);
+}
+
+.snake{
+
+    transition: background-color 0.3s; /* Smooth transition */
+    background-color: rgb(39, 223, 52);
+    height: 50px;
+    width: 50px;
+
+}
+
+.game-name {
+    color: white;
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px; /* Space between image and text */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+@media (max-width: 768px) {
+    #FirstBar, #SearchBar {
+        width: 90%; /* Make bars adjust to smaller screens */
+    }
+
+    .storage-unit, .game-unit {
+        width: 80px; /* Smaller widths on smaller screens */
+        margin-right: 10px;
+    }
+
+    .game-unit .game-name {
+        font-size: 12px; /* Smaller text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 10px; /* Reduce padding on small screens */
+        flex-direction: column; /* Stack items on top of each other */
+    }
+
+    .game-unit {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Spacing between items */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar */
+        height: auto; /* Adjust height for smaller screens */
+    }
+}
+
+.docs{
+    height: 60px;
+    width: 60px;
+}

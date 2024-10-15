@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Windows 11 font */
+}
+
+.calculator {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #202124; /* Dark background */
+    border-radius: 25px;
+    max-width: 300px; /* Slightly wider */
+    height: 500px; /* Increased height */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Increased gap for better spacing */
+    padding: 20px; /* Increased padding */
+    background-color: #202124;
+    flex-grow: 1;
+}
+
+#display {
+    width: 100%; /* Full width */
+    height: 20%; /* Adjusted height */
+    padding: 20px; /* Increased padding */
+    font-size: 2rem; /* Adjusted font size */
+    text-align: right; /* Right-aligned for better UX */
+    border: none;
+    background-color: #303134; /* Darker display background */
+    color: white;
+    box-sizing: border-box;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+button {
+    width: 100%; /* Full width */
+    height: 60px; /* Consistent height */
+    border-radius: 15px; /* Rounded buttons */
+    border: none;
+    background-color: #3c4043; /* Dark button background */
+    color: white;
+    font-size: 1.5rem; /* Adjusted font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #5f6368; /* Lighter on hover */
+}
+
+button:active {
+    background-color: #787c81; /* Even lighter on active */
+}
+
+.operator-btn {
+    background-color: #1a73e8; /* Blue for operators */
+}
+
+button.operator-btn:hover {
+    background-color: #4285f4; /* Lighter blue on hover */
+}
+
+button.operator-btn:active {
+    background-color: #5a95f5; /* Even lighter blue on active */
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+
+    button {
+        height: 50px; /* Adjusted height for smaller screens */
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+}

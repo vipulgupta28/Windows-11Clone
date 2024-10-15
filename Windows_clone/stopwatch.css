@@ -1,0 +1,68 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f3f4f6; /* Light background */
+}
+
+.stopwatch-container {
+    background: #ffffff; /* White background */
+    border: 1px solid #e1e1e1; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+.display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn.start {
+    background: #0078d4; /* Windows 11 accent blue */
+    color: #ffffff;
+}
+
+.btn.start:hover {
+    background: #005a9e; /* Darker blue on hover */
+}
+
+.btn.reset {
+    background: #f44336; /* Red for reset */
+    color: #ffffff;
+}
+
+.btn.reset:hover {
+    background: #d32f2f; /* Darker red on hover */
+}

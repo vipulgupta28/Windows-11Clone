@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="box" id="box">        
+        <div class="boxo">
+            <div class="icon-container">
+                <img src="./Computer.ico" class="image" id="image" alt="Computer Icon">
+                <p>This PC</p>
+            </div>
+    
+            <div class="icon-container">
+                <img src="./icons8-recycle-bin-48.png" class="trash" id="trash" alt="Recycle Bin Icon">
+                <p>Recycle Bin</p>
+            </div>
+    
+            <div class="icon-container">
+                <img src="./icons8-folder-48 (2).png" class="folder" id="folder" alt="Folder Icon">
+                <p>Chef's Kiss</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="my" id="my">
+
+</div>
+
+
+        <div class="taskbar">
+            <img src="./icons8-windows-11-48.png" class="start" alt="Windows Icon" id="startButton">
+            <div class="start-menu" id="startMenu">
+                <textarea id="mySearch" class="mySearch" placeholder="Search for apps, settings, and documents"></textarea>
+
+                <div class="uppertext">
+                <p class="pinned"> Pinned</p>
+                <button class="apps">All apps ></button>
+            </div>
+
+                <div class="grid1" >
+                <a href="#" class="to-do" id="to-do"><img src="./icons8-microsoft-todo-2019-48.png"> To-do </a>
+                <a href="#" id="edge"><img src="./icons8-edge-48.png">Edge</a>
+                <a href="#" id="calender"><img src="./icons8-calendar-48.png">Calendar </a>
+                <a href="#"><img src="./icons8-setting-48.png">Settings</a>
+                <a href="#" id="games"><img src="./icons8-games-48.png"> Games</a>
+                <a href="#" id="amazon"><img src="./icons8-amazon-shopping-app-48.png">Amazon.com</a>
+                <a href="#" id="calci"><img src="./icons8-calculator-48.png"> Calculator</a>
+                <a href="#" id="mines"><img src="./icons8-land-mine-48.png">Mines</a>
+                <a href="#"><img src="./icons8-gallery-48.png">Photos</a>
+                <a href="#"><img src="./icons8-sticky-notes-48.png">Sticky</a>
+                
+            </div>
+
+                <div class="midtext">
+                    <p class="recommended">Recommended</p>
+                    <button class="more">More</button>
+            </div>
+
+            <div class="grid2" >
+                <a href="#" id="text-editor"><img src="./icons8-notepad-48.png"> Notepad </a>
+                <a href="#" id="stopwatch"><img src="./icons8-time-48.png">Stop Watch</a>
+                <a href="#" id="language"><img src="./icons8-language-48.png"> Language Translator</a></div>
+               
+                <div class="lowertext">
+                <button class="hp">HP</button>
+                <button class="power">power</button>
+            </div>
+        </div>
+
+            <img src="./icons8-magnifying-glass-48.png" class="magnifying-glass" alt="Search Icon">
+            <img src="./icons8-screensharing-50.png" class="screensharing" id="screensharing" alt="Screensharing Icon">
+
+            <div class="multiple" id="multiple">
+                <button class="current">Desktop 1</button>
+                <button class="new-one">Desktop 2</button>
+            </div>
+
+
+
+            <img src="./icons8-file-explorer-new-48.png" class="file-explorer" id="file-explorer" alt="File Explorer Icon">
+            <img src="./icons8-microsoft-store-48.png" class="microsoft-store" id="store" alt="Microsoft Store Icon">
+            <img src="./icons8-chrome-48.png" class="chrome" id="chrome" alt="Chrome Icon">
+            <img src="./icons8-spotify-48.png" class="spotify" id="spotify" alt="Spotify Icon">
+            <button class="language">ENG <br>US</button>
+
+            <div class="class" id="class">
+                <img src="./icons8-wifi-32.png" class="wifi">
+                <img src="./icons8-sound-48.png" class="sound">
+                <img src="./icons8-battery-48.png" class="battery">
+
+
+                <div class="right-bar" id="right-bar">
+
+                    <div class="inside">
+                        <div class="button-container">
+                    <button class="w"><img src="./icons8-wifi-32.png"></button>
+                    <p class="p">wifi</p>
+                </div>
+                <div class="button-container">
+                    <button class="b"><img src="./icons8-bluetooth-32.png"></button>
+                    <p>Bluetooth</p>
+                </div>
+                <div class="button-container">
+                    <button class="a"><img src="./icons8-plane-32.png"></button>
+                    <p>Airplane mode</p>
+                </div>
+                <div class="button-container">
+                    <button class="bs"><img src="./icons8-recharge-battery-32.png"></button>
+                    <p>Battery saver</p>
+                </div>
+                <div class="button-container">
+                    <button class="nl"><img src="./icons8-sun-48.png"></button>
+                    <p>Night light</p>
+                </div>
+                <div class="button-container">
+                    <button class="acc"><img src="./icons8-accessibility-32.png"></button>
+                    <p>Accessibility</p>
+                </div>
+                <div class="button-container">
+                    <button class="mh"><img src="./icons8-hotspot-32.png"></button>
+                    <p>Mobile Hotspot</p>
+                </div>
+                
+            </div>
+            <div class="slider-container-1" >  
+                <div class="slider-fill-1" id="sliderFill-1"></div>
+                <img src="./icons8-sun-48.png" class="bright">
+              
+                <input type="range" min="0" max="100" value="0" class="range-slider-1" id="rangeSlider-1" oninput="updateSlider(this.value)">
+            </div>
+
+            <div class="slider-container-2">
+                <div class="slider-fill-2" id="sliderFill-2"></div>
+                <img src="./icons8-sound-48.png">
+                <input type="range" min="0" max="100" value="0" class="range-slider-2" id="rangeSlider-2" oninput="updateSlider2(this.value)">
+            </div>
+
+                </div>
+                
+            </div>
+        
+
+            <div class="datetime">
+                <div class="time" id="time"></div>
+                <div class="date" id="date"></div>
+                
+            </div>
+        </div>
+       
+
+        
+        <div id="queue-display"></div>
+    </div>
+
+    <div id="myDropdown" class="dropdown">
+        <a href="#" id="content"><i class="fa-solid fa-border-all" id="icon"></i> View</a>
+        <div class="display-content-view" id="display-content-view">
+            <a href="#" id="large"><img src="./icons8-desktop-24.png" class="myIcon">Large icons</a>
+            <a href="#" id="medium"><img src="./icons8-desktop-24.png" class="myIcon">Medium icons</a>
+            <a href="#" id="small"><i class="fa-solid fa-border-all" id="icon"></i>Small icons</a>
+            <a href="#"><img src="./icons8-arrange-48.png" class="myIcon">Auto arrange icons</a>
+            <a href="#"><img src="./icons8-grid-48.png" class="myIcon">Align icons to grid</a>
+            <a href="#"><img src="./icons8-show-24.png" class="myIcon">Show desktop icons</a>
+        </div>
+        
+        <a href="#" class="content" id="sort"><i class="fa-solid fa-up-down" id="icon"></i> Sort By</a>
+        <div class="display-content-sort" id="display-content-sort">
+            <a href="#">Name</a>
+            <a href="#">Size</a>
+            <a href="#">Item Type</a>
+            <a href="#">Date Modified</a>
+
+        </div>
+
+        <a href="#" class="content" id="refresh"><i class="fas fa-redo-alt" id="icon"></i> Refresh</a>
+        <hr>
+        <a href="#" class="content" id="new"><i class="fa-solid fa-plus" id="icon"></i> New</a>
+        <div class="display-content-new" id="display-content-new">
+            <a href="#" id="newFolder"><img src="./icons8-folder-48 (2).png" class="myIcon">Folder</a>
+            <div id="folderContainer"></div>
+            <a href="#"><img src="./export.png" class="myIcon">Shortcut</a>
+            <a href="#"><img src="./file (3).png" class="myIcon">Bitmap image</a>
+            <a href="#"><img src="./office.png" class="myIcon">Microsoft word Document</a>
+            <a href="#"><img src="./icons8-powerpoint-48.png" class="myIcon">Microsoft Powerpoint Document</a>
+            <a href="#"><img src="./icons8-winrar-48.png" class="myIcon">Compressed Archive Folder</a>
+            <a href="#"><img src="./icons8-text-document-64.png" class="myIcon">Text Document</a>
+            <a href="#"><img src="./icons8-excel-48.png" class="myIcon">Microsoft Excel Worksheet</a>
+            <a href="#"><img src="./icons8-archive-folder-48.png" class="myIcon">Win RAR Zip Archive</a>
+        </div>
+        <hr>
+        <a href="#" class="content"><i class="fa-solid fa-desktop" id="icon"></i> Display Settings</a>
+        <a href="#" class="content"><i class="fa-solid fa-user" id="icon"></i> Personalize</a>
+        <hr>
+        <a href="#" class="content"><i class="fa-solid fa-terminal" id="icon"></i> Open In Terminal</a>
+        <a href="#" class="content"><i class="fa-solid fa-magnifying-glass" id="icon"></i> Show more options</a>
+    </div>
+
+    <div id="SystemInbuilt" class="SystemInbuilt">
+        <a href="#" id="content"><i class="fa-solid fa-border-all" id="icon"></i> Open</a>
+        <a href="#" id="content"><i class="fa-solid fa-up-down" id="icon"></i> Map Network Drive...</a>
+        <a href="#" id="content"><i class="fas fa-redo-alt" id="icon"></i> Disconnect Network Drive...</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-plus" id="icon"></i> Pin to Quick Access</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-desktop" id="icon"></i> Pin to Start</a>
+        <a href="#" id="content"><i class="fa-solid fa-user" id="icon"></i> Properties</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-terminal" id="icon"></i> Show more options</a>
+    </div>
+
+    <div id="start" class="start">
+        <a href="#" id="content"><i class="fa-solid fa-border-all" id="icon"></i> Open</a>
+        <a href="#" id="content"><i class="fa-solid fa-up-down" id="icon"></i> Map Network Drive...</a>
+        <a href="#" id="content"><i class="fas fa-redo-alt" id="icon"></i> Disconnect Network Drive...</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-plus" id="icon"></i> Pin to Quick Access</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-desktop" id="icon"></i> Pin to Start</a>
+        <a href="#" id="content"><i class="fa-solid fa-user" id="icon"></i> Properties</a>
+        <hr>
+        <a href="#" id="content"><i class="fa-solid fa-terminal" id="icon"></i> Show more options</a>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
